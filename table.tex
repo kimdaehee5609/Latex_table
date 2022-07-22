@@ -1,0 +1,1395 @@
+%	-------------------------------------------------------------------------------
+% 
+%		날씨
+%		
+%		관련업체	한국수자원공사	현대건설	토사운반용역업체  연약지반처리업체
+%
+%		추가토취장승인17차 	추가토취장점검	추가토취장승인17
+%
+%		건설사업관리	
+%
+%		건설사업관리분기보고서
+%
+%		건설사업관리현장전도금		감리단현장식대	전도금정산서
+%
+%		공사관리
+%
+%		토취장관리
+%
+%		외부토사반입관리
+%
+%		송장관리
+%
+%		김대희개인업무	서영남해확장	2019.04.26		업무일지2019.18째주  	통장 	카드 	김대희위생 김대희건강 건강뇌경색
+%
+%		감리단현장식대
+%
+%		메모메모
+%
+%		김대희통장
+%
+%	-------------------------------------------------------------------------------
+
+	\documentclass[12pt, a4paper, oneside]{book}
+%	\documentclass[12pt, a4paper, landscape, oneside]{book}
+
+		% --------------------------------- 페이지 스타일 지정
+		\usepackage{geometry}
+%		\geometry{landscape=true	}
+		\geometry{top 		=10em}
+		\geometry{bottom	=10em}
+		\geometry{left		=5em}
+		\geometry{right		=5em}
+%		\geometry{left		=4em}
+%		\geometry{right		=4em}
+
+		\geometry{headheight	=4em} % 머리말 설치 높이
+		\geometry{headsep		=2em} % 머리말의 본문과의 띠우기 크기
+		\geometry{footskip		=4em} % 꼬리말의 본문과의 띠우기 크기
+% 		\geometry{showframe}
+	
+%		paperwidth 	= left + width + right (1)
+%		paperheight 	= top + height + bottom (2)
+%		width 		= textwidth (+ marginparsep + marginparwidth) (3)
+%		height 		= textheight (+ headheight + headsep + footskip) (4)
+
+
+
+		%	===================================================================
+		%	package
+		%	===================================================================
+%			\usepackage[hangul]{kotex}				% 한글 사용
+			\usepackage{kotex}					% 한글 사용
+			\usepackage[unicode]{hyperref}			% 한글 하이퍼링크 사용
+
+		% ------------------------------ 수학 수식
+			\usepackage{amssymb,amsfonts,amsmath}	% 수학 수식 사용
+			\usepackage{mathtools}				% amsmath 확장판
+
+			\usepackage{scrextend}				% 
+		
+
+		% ------------------------------ LIST
+			\usepackage{enumerate}			%
+			\usepackage{enumitem}			%
+			\usepackage{tablists}				%	수학문제의 보기 등을 표현하는데 사용
+										%	tabenum
+
+
+		% ------------------------------ table 
+			\usepackage{longtable}			%
+			\usepackage{tabularx}			%
+			\usepackage{tabu}				%
+
+
+
+
+		% ------------------------------ 
+			\usepackage{setspace}			%
+			\usepackage{booktabs}		% table
+			\usepackage{color}			%
+			\usepackage{multirow}			%
+			\usepackage{boxedminipage}	% 미니 페이지
+			\usepackage[pdftex]{graphicx}	% 그림 사용
+			\usepackage[final]{pdfpages}		% pdf 사용
+			\usepackage{framed}			% pdf 사용
+
+			
+			\usepackage{fix-cm}	
+			\usepackage[english]{babel}
+	
+		%	=======================================================================================
+		% 	tikz package
+		% 	
+		% 	--------------------------------- 	
+			\usepackage{tikz}%
+			\usetikzlibrary{arrows,positioning,shapes}
+			\usetikzlibrary{mindmap}			
+			
+
+		% --------------------------------- 	page
+			\usepackage{afterpage}		% 다음페이지가 나온면 어떻게 하라는 명령 정의 패키지
+%			\usepackage{fullpage}			% 잘못 사용하면 다 흐트러짐 주의해서 사용
+%			\usepackage{pdflscape}		% 
+			\usepackage{lscape}			%	 
+
+
+			\usepackage{blindtext}
+	
+		% --------------------------------- font 사용
+			\usepackage{pifont}				%
+			\usepackage{textcomp}
+			\usepackage{gensymb}
+			\usepackage{marvosym}
+
+
+
+		% Package --------------------------------- 
+
+			\usepackage{tablists}				%
+
+
+		% Package --------------------------------- 
+			\usepackage[framemethod=TikZ]{mdframed}				% md framed package
+			\usepackage{smartdiagram}								% smart diagram package
+
+
+
+		% Package ---------------------------------    연습문제 
+
+			\usepackage{exsheets}				%
+
+			\SetupExSheets{solution/print=true}
+			\SetupExSheets{question/type=exam}
+			\SetupExSheets[points]{name=point,name-plural=points}
+
+
+		% --------------------------------- 페이지 스타일 지정
+
+		\usepackage[Sonny]		{fncychap}
+
+			\makeatletter
+			\ChNameVar	{\Large\bf}
+			\ChNumVar	{\Huge\bf}
+			\ChTitleVar		{\Large\bf}
+			\ChRuleWidth	{0.5pt}
+			\makeatother
+
+%		\usepackage[Lenny]		{fncychap}
+%		\usepackage[Glenn]		{fncychap}
+%		\usepackage[Conny]		{fncychap}
+%		\usepackage[Rejne]		{fncychap}
+%		\usepackage[Bjarne]	{fncychap}
+%		\usepackage[Bjornstrup]{fncychap}
+
+		\usepackage{fancyhdr}
+		\pagestyle{fancy}
+		\fancyhead{} % clear all fields
+		\fancyhead[LO]{\footnotesize \leftmark}
+		\fancyhead[RE]{\footnotesize \leftmark}
+		\fancyfoot{} % clear all fields
+		\fancyfoot[LE,RO]{\large \thepage}
+		%\fancyfoot[CO,CE]{\empty}
+		\renewcommand{\headrulewidth}{1.0pt}
+		\renewcommand{\footrulewidth}{0.4pt}
+	
+	
+	
+		%	--------------------------------------------------------------------------------------- 
+		% 	tritlesec package
+		% 	
+		% 	
+		% 	------------------------------------------------------------------ section 스타일 지정
+	
+			\usepackage{titlesec}
+		
+		% 	----------------------------------------------------------------- section 글자 모양 설정
+			\titleformat*{\section}					{\large\bfseries}
+			\titleformat*{\subsection}				{\normalsize\bfseries}
+			\titleformat*{\subsubsection}			{\normalsize\bfseries}
+			\titleformat*{\paragraph}				{\normalsize\bfseries}
+			\titleformat*{\subparagraph}				{\normalsize\bfseries}
+	
+		% 	----------------------------------------------------------------- section 번호 설정
+			\renewcommand{\thepart}				{\arabic{part}.}
+			\renewcommand{\thesection}				{\arabic{section}.}
+			\renewcommand{\thesubsection}			{\thesection\arabic{subsection}.}
+			\renewcommand{\thesubsubsection}		{\thesubsection\arabic{subsubsection}}
+			\renewcommand\theparagraph 			{$\blacksquare$ \hspace{3pt}}
+
+		% 	----------------------------------------------------------------- section 페이지 나누기 설정
+			\let\stdsection\section
+			\renewcommand\section{\newpage\stdsection}
+
+
+
+		%	--------------------------------------------------------------------------------------- 
+		% 	\titlespacing*{commandi} {left} {before-sep} {after-sep} [right-sep]		
+		% 	left
+		%	before-sep		:  수직 전 간격
+		% 	after-sep	 	:  수직으로 후 간격
+		%	right-sep
+
+			\titlespacing*{\section} 			{0pt}{1.0em}{1.0em}
+			\titlespacing*{\subsection}	  		{0ex}{1.0em}{1.0em}
+			\titlespacing*{\subsubsection}		{0ex}{1.0em}{1.0em}
+			\titlespacing*{\paragraph}			{0em}{1.5em}{1.0em}
+			\titlespacing*{\subparagraph}		{4em}{1.0em}{1.0em}
+	
+		%	\titlespacing*{\section} 			{0pt}{0.0\baselineskip}{0.0\baselineskip}
+		%	\titlespacing*{\subsection}	  		{0ex}{0.0\baselineskip}{0.0\baselineskip}
+		%	\titlespacing*{\subsubsection}		{6ex}{0.0\baselineskip}{0.0\baselineskip}
+		%	\titlespacing*{\paragraph}			{6pt}{0.0\baselineskip}{0.0\baselineskip}
+	
+
+		% --------------------------------- recommend		섹션별 페이지 상단 여백
+		\newcommand{\SectionMargin}				{\newpage  \null \vskip 2cm}
+		\newcommand{\SubSectionMargin}			{\newpage  \null \vskip 2cm}
+		\newcommand{\SubSubSectionMargin}		{\newpage  \null \vskip 2cm}
+
+
+		%	--------------------------------------------------------------------------------------- 
+		% 	toc 설정  - table of contents
+		%	--------------------------------------------------------------------------------------- 
+		%	--------------------------------------------------------------------------------------- 
+		%	--------------------------------------------------------------------------------------- 
+		%	--------------------------------------------------------------------------------------- 
+		%	--------------------------------------------------------------------------------------- 
+		%	--------------------------------------------------------------------------------------- 
+		%	--------------------------------------------------------------------------------------- 
+		% 	
+		% 	
+		% 	----------------------------------------------------------------  문서 기본 사항 설정
+			\setcounter{secnumdepth}{5} 		% 문단 번호 깊이
+			\setcounter{tocdepth}{2} 			% 문단 번호 깊이 - 목차 출력시 출력 범위
+%			\setcounter{tocdepth}{-1} 			% 문단 번호 깊이 - 목차 출력시 출력 범위
+
+
+			\setlength{\parindent}{0cm} 		% 문서 들여 쓰기를 하지 않는다.
+
+
+		%	--------------------------------------------------------------------------------------- 
+		% 	mini toc 설정
+		% 	
+		% 	
+		% 	--------------------------------------------------------- 장의 목차  minitoc package
+			\usepackage{minitoc}
+
+			\setcounter{minitocdepth}{4}    	%  Show until subsubsections in minitoc
+%			\setcounter{minitocdepth}{5}    	%  Show until subsubsections in minitoc
+%			\setlength{\mtcindent}{12pt} 	% default 24pt
+			\setlength{\mtcindent}{24pt} 	% default 24pt
+
+		% 	--------------------------------------------------------- part toc
+		%	\setcounter{parttocdepth}{2} 	%  default
+			\setcounter{parttocdepth}{0}
+		%	\setlength{\ptcindent}{0em}		%  default  목차 내용 들여 쓰기
+			\setlength{\ptcindent}{0em}         
+
+
+		% 	--------------------------------------------------------- section toc
+
+			\renewcommand{\ptcfont}{\normalsize\rm} 		%  default
+			\renewcommand{\ptcCfont}{\normalsize\bf} 	%  default
+			\renewcommand{\ptcSfont}{\normalsize\rm} 	%  default
+
+
+		%	=======================================================================================
+		% 	tocloft package
+		% 	
+		% 	------------------------------------------ 목차의 목차 번호와 목차 사이의 간격 조정
+			\usepackage{tocloft}
+
+		% 	------------------------------------------ 목차의 내어쓰기 즉 왼쪽 마진 설정
+			\setlength{\cftsecindent}{2em}			%  section
+
+		% 	------------------------------------------ 목차의 목차 번호와 목차 사이의 간격 조정
+			\setlength{\cftsecnumwidth}{2em}		%  section
+
+
+
+
+
+		%	=======================================================================================
+		% 	flowchart  package
+		% 	
+		% 	------------------------------------------ 목차의 목차 번호와 목차 사이의 간격 조정
+			\usepackage{flowchart}
+			\usetikzlibrary{arrows}
+
+
+
+		%	=======================================================================================
+		% 	줄 간격 설정
+		% 	
+		% 	
+		% 	--------------------------------- 	줄간격 설정
+			\doublespace
+%			\onehalfspace
+%			\singlespace
+		
+		
+
+	% 	============================================================================== itemi Global setting
+
+	
+		%	-------------------------------------------------------------------------------
+		%		Vertical spacing
+		%	-------------------------------------------------------------------------------
+			\setlist[itemize]{topsep=0.0em}			% 상단의 여유치
+			\setlist[itemize]{partopsep=0.0em}			% 
+			\setlist[itemize]{parsep=0.0em}			% 
+%			\setlist[itemize]{itemsep=0.0em}			% 
+			\setlist[itemize]{noitemsep}				% 
+			
+		%	-------------------------------------------------------------------------------
+		%		Horizontal spacing
+		%	-------------------------------------------------------------------------------
+			\setlist[itemize]{labelwidth=1em}			%  라벨의 표시 폭
+			\setlist[itemize]{leftmargin=8em}			%  본문 까지의 왼쪽 여백  - 4em
+			\setlist[itemize]{labelsep=3em} 			%  본문에서 라벨까지의 거리 -  3em
+			\setlist[itemize]{rightmargin=0em}			% 오른쪽 여백  - 4em
+			\setlist[itemize]{itemindent=0em} 			% 점 내민 거리 label sep 과 같은면 점위치 까지 내민다
+			\setlist[itemize]{listparindent=3em}		% 본문 드려쓰기 간격
+	
+	
+			\setlist[itemize]{ topsep=0.0em, 			%  상단의 여유치
+						partopsep=0.0em, 		%  
+						parsep=0.0em, 
+						itemsep=0.0em, 
+						labelwidth=1em, 
+						leftmargin=2.5em,
+						labelsep=2em,			%  본문에서 라벨 까지의 거리
+						rightmargin=0em,		% 오른쪽 여백  - 4em
+						itemindent=0em, 		% 점 내민 거리 label sep 과 같은면 점위치 까지 내민다
+						listparindent=0em}		% 본문 드려쓰기 간격
+	
+%			\begin{itemize}
+	
+		%	-------------------------------------------------------------------------------
+		%		Label
+		%	-------------------------------------------------------------------------------
+			\renewcommand{\labelitemi}{$\bullet$}
+			\renewcommand{\labelitemii}{$\bullet$}
+%			\renewcommand{\labelitemii}{$\cdot$}
+			\renewcommand{\labelitemiii}{$\diamond$}
+			\renewcommand{\labelitemiv}{$\ast$}		
+	
+%			\renewcommand{\labelitemi}{$\blacksquare$}   	% 사각형 - 찬것
+%			\renewcommand\labelitemii{$\square$}		% 사각형 - 빈것	
+
+
+
+
+			\usepackage{caption}
+%			\captionsetup[table]{skip=10pt plus 0.01pt}
+			\captionsetup[table]{skip=04pt plus 0.01pt}
+			%\captionsetup{tableposition=above}
+			
+
+
+
+
+
+
+% ------------------------------------------------------------------------------
+% Begin document (Content goes below)
+% ------------------------------------------------------------------------------
+	\begin{document}
+	
+			\dominitoc
+			\doparttoc			
+
+
+
+
+			\title{Table}
+			\author{김대희}
+			\date{2019년 04월}
+			\maketitle
+
+
+			\tableofcontents 		% 목차 출력
+
+			\cleardoublepage
+			\listoffigures 			% 그림 목차 출력
+
+			\cleardoublepage
+			\listoftables 			% 표 목차 출력
+
+
+
+
+
+		\mdfdefinestyle	{con_specification} {
+						outerlinewidth		=1pt			,%
+						innerlinewidth		=2pt			,%
+						outerlinecolor		=blue!70!black	,%
+						innerlinecolor		=white 			,%
+						roundcorner			=4pt			,%
+						skipabove			=1em 			,%
+						skipbelow			=1em 			,%
+						leftmargin			=0em			,%
+						rightmargin			=0em			,%
+						innertopmargin		=2em 			,%
+						innerbottommargin 	=2em 			,%
+						innerleftmargin		=1em 			,%
+						innerrightmargin		=1em 			,%
+						backgroundcolor		=gray!4			,%
+						frametitlerule		=true 			,%
+						frametitlerulecolor	=white			,%
+						frametitlebackgroundcolor=black		,%
+						frametitleaboveskip=1em 			,%
+						frametitlebelowskip=1em 			,%
+						frametitlefontcolor=white 			,%
+						}
+
+
+
+%	================================================================== Part			table
+%	\addtocontents{toc}{\protect\newpage}
+	\part{table}
+	\noptcrule
+	\parttoc				
+
+
+
+		\section{	caption	}				
+
+
+
+
+
+%	================================================================== Part			tabu
+%	\addtocontents{toc}{\protect\newpage}
+	\part{table tabu}
+	\noptcrule
+	\parttoc				
+
+
+	%	------------------------------------------------------------------------------  table tabu포스트잇
+
+			\begin{table} [h]
+	
+			\caption{포스트 잇 75×75 }  
+			\label{tab:title} 
+	
+			\begin{center}
+			\tabulinesep=0.4em
+
+			\begin{tabu} to 7.5cm { X[r] X[l] X[c]  }
+			\hline \hline
+			구분	&팩스 번호 & 비고  \\ \hline \hline
+			서영			&051.941.8691&	\\
+			\tabucline [0.01pt,] {-}
+			이재봉 단장	&050.4480.0160&	\\
+			김대희		&050.4472.5609&	\\
+			홍성하 과장	&050.4486.9395&	\\
+			\tabucline [0.01pt,] {-}
+			현대			&051.294.9054&	\\
+			서영 감리팀	&02.6915.7007&	\\
+			\tabucline [0.01pt,] {-}
+			\tabucline [0.1pt,] {-}
+			\end{tabu} 
+			\end{center}
+			\end{table}
+		\clearpage
+
+
+
+	%	------------------------------------------------------------------------------  table tabu
+
+			\begin{table} [h]
+	
+			\caption{사무실 연락처 - 팩스 번호}  
+			\label{tab:title} 
+	
+			\begin{center}
+			\tabulinesep=0.4em
+
+			\begin{tabu} to 0.8\linewidth { X[r] X[l] X[c]  }
+			\tabucline [1pt,] {-}
+			구분	&팩스 번호 & 비고  \\
+			\tabucline [0.1pt,] {-}
+			\tabucline [0.01pt,] {-}
+			서영			&051.941.8691&	\\
+			\tabucline [0.01pt,] {-}
+			이재봉 단장	&050.4480.0160&	\\
+			김대희		&050.4472.5609&	\\
+			홍성하 과장	&050.4486.9395&	\\
+			\tabucline [0.01pt,] {-}
+			현대			&051.294.9054&	\\
+			서영 감리팀	&02.6915.7007&	\\
+			\tabucline [0.01pt,] {-}
+			\tabucline [0.1pt,] {-}
+			\end{tabu} 
+			\end{center}
+			\end{table}
+
+
+
+			% ------------------------------------------------------------------------------ table tabu
+			\begin{table} [h]														
+			\caption{운반업체 현황}										
+			\label{tab:title}														
+			\tabulinesep=		1.2	em
+%			\tabulinesep=		0.0	em
+			\begin{tabu} to 1.0\linewidth {														
+						X[		r,		0.4	]	% 01					
+						X[		r,		1.0	]	% 02					
+						X[		r,		1.0	]	% 03					
+						X[		r,		1.0	]	% 04					
+						X[		r,		1.0	]	% 04					
+						X[		r,		1.0	]	% 05					
+						}											
+				\hline \hline
+				번호	&업체명	&대표이사	&직책	&전화번호 		&비고	\\				
+				\hline \hline
+				1	&	금풍건설	&		&		&		&		\\	\hline
+				2	&	우량개발	&	엄상환	&	이사	&	010-3133-0899	&		\\	\hline
+				3	&	라인공영	&	김현수	&	상무	&	010-3814-2552	&		\\	\hline
+				4	&	대현이엔티	&	김경준	&	사장	&	010-5126-8028	&		\\	\hline
+				5	&	KD토건	&	김택만	&	대표	&	010-4559-0571	&		\\	\hline
+				6	&	토성개발	&	정창운	&	대표	&	010-5895-3305	&		\\	\hline
+				7	&	신창토건	&	이갑세	&	대표	&	010-3562-4355	&		\\	\hline 	\hline
+			\end{tabu}														
+			\end{table}														
+			\clearpage														
+
+
+
+			% ------------------------------------------------------------------------------ table tabu
+			\begin{table} [h]														
+			\caption{토취장 현황}
+			\label{tab:title}														
+			\tabulinesep=		0.80	em
+%			\tabulinesep=		0.0	em
+			\begin{tabu} to 1.00\linewidth {														
+						X[		r,		0.4	]	% 01					
+						X[		r,		2.4	]	% 02					
+						X[		r,		2.0	]	% 03					
+						X[		r,		2.0	]	% 04					
+						X[		r,		2.0	]	% 05					
+						X[		r,		2.0	]	% 06					
+						}											
+				\hline \hline
+				번호	&문서번호				&시행일자		&팩스번호			&전화번호		&담당자 	\\	\hline \hline
+				1701	&KCC 제711-063호 		&2019.04.05	&				&070-7780-1089	&배윤오	\\	\hline
+				1702	&서면-19-014			&2019.04.16	&				&051-809-0283	&정의철 	\\	\hline
+				1703	&에이티 제2019-장림-01호	&2019.04.17	&051-631-1690		&051-631-1687	&임종현	\\	\hline 
+				1704	&에이티 제2019-연산-01호	&2019.04.17	&051-631-1690		&051-631-1687	&박종현	\\	\hline \hline
+			\end{tabu}														
+			\end{table}														
+			\clearpage														
+
+
+
+			% ------------------------------------------------------------------------------ table tabu
+			\begin{table} [h]														
+			\caption{적금 가입 : 601740-11-017006 }
+			\label{tab:title}														
+			\tabulinesep=		0.80	em
+%			\tabulinesep=		0.0	em
+			\begin{tabu} to 1.00\linewidth {														
+						X[		r,		0.4	]	% 01					
+						X[		r,		1.0	]	% 02					
+						X[		r,		2.0	]	% 03					
+						X[		r,		2.0	]	% 04					
+						}											
+				\hline \hline
+				번호	&구분		&내용			&비고 			\\	\hline \hline
+				01	&예금종류		&2040+α정기예금		&만기일시지급식		\\	\hline
+				02	&계좌번호 		&601740-11-017006	&일단위이자계산 	\\	\hline
+				03	&계약금액		&3,054,280			&				\\	\hline \hline
+				04	&총이율		&1.900			&	\\	\hline
+				05	&약정이율		&1.80				&	\\	\hline
+				06	&우대이율		&0.10				&	\\	\hline \hline
+
+				07	&계약일자		&2019.04.30		&	\\	\hline
+				08	&계약기간		&6개월			&	\\	\hline
+				09	&만기일자		&2019.10.30 		&	\\	\hline \hline
+				10	&세전금액		&3,083,370 			&	\\	\hline
+				11	&세후금액		&3,078,900			&	\\	\hline
+				12	&세금공제액	&소득세 4,070 주민세 400 &	\\	\hline \hline
+				00	&용도		&비상금			 &	\\	\hline \hline
+
+			\end{tabu}														
+			\end{table}														
+			\clearpage														
+
+
+
+
+			% ------------------------------------------------------------------------------ table tabu
+			\begin{table} [h]														
+			\caption{통장 현황 : 2019.04.30 기준}
+			\label{tab:title}														
+			\tabulinesep=		1.2	em
+%			\tabulinesep=		0.0	em
+			\begin{tabu} to 1.0\linewidth {														
+						X[		r,		0.2	]	% 01					
+						X[		r,		0.6	]	% 02					
+						X[		r,		1.0	]	% 03					
+						X[		r,		1.0	]	% 04					
+						X[		r,		1.0	]	% 05					
+						X[		r,		1.0	]	% 06					
+						X[		r,		1.0	]	% 07					
+						}											
+				\hline \hline
+				번호	&은행명	&통장명			&계좌번호			&용도				&비밀번호 		&비고	\\	\hline \hline
+				01	&우체국	&우체국청춘연금통장	&614099-02-012850	&현장경비,법인카드결제	&			&		\\	\hline
+				02	&우체국	&2040+α저축예금		&614099-02-006636	&현장경비 현금			&			&		\\	\hline
+				03	&우첵구	&일반저축예금		&614073-02-008610	&주재비				&			&		\\	\hline
+				04	&우체국	&거치식예금통장		&601740-77-007610	&적금				&			&		\\	\hline
+			\end{tabu}														
+			\end{table}														
+			\clearpage														
+
+
+
+
+			% ------------------------------------------------------------------------------ table tabu
+			\begin{table} [h]														
+			\caption{운반업체 비상연락망}										
+			\label{tab:title}														
+			\tabulinesep=		1.2	em
+%			\tabulinesep=		0.0	em
+			\begin{tabu} to 1.0\linewidth {														
+						X[		r,		0.4	]	% 01					
+						X[		r,		1.0	]	% 02					
+						X[		r,		1.0	]	% 03					
+						X[		r,		1.0	]	% 04					
+						X[		r,		1.0	]	% 04					
+						X[		r,		1.0	]	% 05					
+						}											
+				\tabucline[0.1ex]{- }													
+				번호	&업체명	&이름		&직책	&전화번호 		&비고	\\				
+				\tabucline[0.02ex]{- }													
+				1	&	우량	&	김세관	&	부장	&	010-7477-1589	&		 \\								
+				2	&	라인	&	김상섭	&	과장	&	010-2946-5966	&		 \\								
+				3	&	해치	&	오준호	&	과장	&	010-8685-1500	&		 \\								
+				4	&	KD	&	징호윤	&	부장	&	010-6222-0350	&		 \\								
+				5	&	신창	&	이헌우	&	부장	&	010-3592-8680	&		 \\								
+				6	&	신창	&	지재일	&	부장	&	010-4675-0477	&		 \\								
+				\tabucline[0.02ex]{- }													
+				\tabucline[0.02ex]{- }													
+																	
+			\end{tabu}														
+			\end{table}														
+			\clearpage														
+
+
+
+		\section{	tabu}				
+	%	------------------------------------------------------------------------------  table tabu
+
+
+
+
+			% ------------------------------------------------------------------------------ table	tabu
+					\begin{table} [h]
+					\caption{오늘할일 :			2018년 10월 23일 화요일	}
+					\label{tab:title}
+			%		\tabulinesep=		1.2	em 	% 출력물 작성
+					\tabulinesep=		0.0	em 	% 최종 
+					\begin{tabu} to 1.0\linewidth {	
+										X[		r	,	1	]	% 01	
+						|				X[		r	,	4	]	% 02
+						|				X[		r	,	1	]	% 03
+										}
+						\tabucline[0.12ex]{- }  % ----- ----- ----- ----- ----- ----- ----- ----- -----
+						구분 &				업무내용	&	비고		\\
+						\tabucline[0.02ex]{- }  % ----- ----- ----- ----- ----- ----- ----- ----- -----
+						\tabucline[0.12ex]{- }  % ----- ----- ----- ----- ----- ----- ----- ----- -----
+						일상업무 &						&		\\	
+						일상업무 &						&		\\	
+						일상업무 &						&		\\	
+						일상업무 &						&		\\	
+						\tabucline[0.02ex]{- }  % ----- ----- ----- ----- ----- ----- ----- ----- -----
+						문서 수정 &					&		\\
+						문서 수정 &					&		\\
+						문서 수정 &					&		\\
+						문서 수정 &					&		\\
+						문서 수정 &					&		\\
+						\tabucline[0.02ex]{- }  % ----- ----- ----- ----- ----- ----- ----- ----- -----
+						개인 업무 &					&		\\
+						개인 업무 &					&		\\
+						개인 업무 &					&		\\
+						개인 업무 &					&		\\
+						개인 업무 &					&		\\
+						\tabucline[0.02ex]{- }  % ----- ----- ----- ----- ----- ----- ----- ----- -----													
+						\tabucline[0.12ex]{- }  % ----- ----- ----- ----- ----- ----- ----- ----- -----
+					\end{tabu}
+					\end{table}
+					\clearpage
+
+										
+
+
+%	================================================================== Part			longtabu
+%	\addtocontents{toc}{\protect\newpage}
+	\part{longtabu}
+	\noptcrule
+	\parttoc				
+
+
+
+		\section{	longtabu}				
+
+
+	%	------------------------------------------------------------------------------  table longtable
+				\begin{table} [h]																	
+				\caption{		날씨 2019년}										
+				\label{tab:title}																	
+				\end{table}												
+					
+				\tabulinesep=				1.0	em
+%				\tabulinesep=				0.0	em
+				\begin{longtabu} to 1.0\linewidth { 																	
+						X[	l,	1	]	%	1	번호									
+					|	X[	l,	1	]	%	2	일자								
+					|	X[	l,	1	]	%	3	요일									
+					|	X[	l,	1	]	%	3	날씨									
+					|	X[	l,	1	]	%	4	비고									
+						}															
+			% ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 							.											
+				\tabucline [1pt,] {-}																	
+				번호	&일자&요일	&날씨	&비고 \\										
+				\tabucline [0.1pt,] {-}																	
+				\tabucline [0.1pt,] {-}																	
+				\endfirsthead																	
+				\endhead
+			% ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 							.											
+					&			&		&			\\	\tabucline [0.11pt,] {-} %01
+					&			&		&			\\	\tabucline [0.11pt,] {-} %02
+					&			&		&			\\	\tabucline [0.11pt,] {-} %03
+					&			&		&			\\	\tabucline [0.11pt,] {-} %04
+					&			&		&			\\	\tabucline [0.11pt,] {-} %05
+					&			&		&			\\	\tabucline [0.11pt,] {-} %06
+					&			&		&			\\	\tabucline [0.11pt,] {-} %07
+					&			&		&			\\	\tabucline [0.11pt,] {-} %08
+					&			&		&			\\	\tabucline [0.11pt,] {-} %09
+					&			&		&			\\	\tabucline [0.11pt,] {-} %10
+					&			&		&			\\	\tabucline [0.11pt,] {-} %11
+					&			&		&			\\	\tabucline [0.11pt,] {-} %12
+					&			&		&			\\	\tabucline [0.11pt,] {-} %13
+					&			&		&			\\	\tabucline [0.11pt,] {-} %14
+					&			&		&			\\	\tabucline [0.11pt,] {-} %15
+			% ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 							.											
+1	&	2019. 01. 01	&	화	&	\\ \tabucline [0.11pt,] {-} %01
+2	&	2019. 01. 02	&	수	&	\\ \tabucline [0.11pt,] {-} %01
+3	&	2019. 01. 03	&	목	&	\\ \tabucline [0.11pt,] {-} %01
+4	&	2019. 01. 04	&	금	&	\\ \tabucline [0.11pt,] {-} %01
+5	&	2019. 01. 05	&	토	&	\\ \tabucline [0.11pt,] {-} %01
+6	&	2019. 01. 06	&	일	&	\\ \tabucline [0.11pt,] {-} %01
+7	&	2019. 01. 07	&	월	&	\\ \tabucline [0.11pt,] {-} %01
+8	&	2019. 01. 08	&	화	&	\\ \tabucline [0.11pt,] {-} %01
+9	&	2019. 01. 09	&	수	&	\\ \tabucline [0.11pt,] {-} %01
+345	&	2019. 12. 11	&	수	&	\\ \tabucline [0.11pt,] {-} %01
+346	&	2019. 12. 12	&	목	&	\\ \tabucline [0.11pt,] {-} %01
+347	&	2019. 12. 13	&	금	&	\\ \tabucline [0.11pt,] {-} %01
+348	&	2019. 12. 14	&	토	&	\\ \tabucline [0.11pt,] {-} %01
+349	&	2019. 12. 15	&	일	&	\\ \tabucline [0.11pt,] {-} %01
+350	&	2019. 12. 16	&	월	&	\\ \tabucline [0.11pt,] {-} %01
+351	&	2019. 12. 17	&	화	&	\\ \tabucline [0.11pt,] {-} %01
+352	&	2019. 12. 18	&	수	&	\\ \tabucline [0.11pt,] {-} %01
+353	&	2019. 12. 19	&	목	&	\\ \tabucline [0.11pt,] {-} %01
+354	&	2019. 12. 20	&	금	&	\\ \tabucline [0.11pt,] {-} %01
+355	&	2019. 12. 21	&	토	&	\\ \tabucline [0.11pt,] {-} %01
+356	&	2019. 12. 22	&	일	&	\\ \tabucline [0.11pt,] {-} %01
+357	&	2019. 12. 23	&	월	&	\\ \tabucline [0.11pt,] {-} %01
+358	&	2019. 12. 24	&	화	&	\\ \tabucline [0.11pt,] {-} %01
+359	&	2019. 12. 25	&	수	&	\\ \tabucline [0.11pt,] {-} %01
+360	&	2019. 12. 26	&	목	&	\\ \tabucline [0.11pt,] {-} %01
+361	&	2019. 12. 27	&	금	&	\\ \tabucline [0.11pt,] {-} %01
+362	&	2019. 12. 28	&	토	&	\\ \tabucline [0.11pt,] {-} %01
+363	&	2019. 12. 29	&	일	&	\\ \tabucline [0.11pt,] {-} %01
+364	&	2019. 12. 30	&	월	&	\\ \tabucline [0.11pt,] {-} %01
+365	&	2019. 12. 31	&	화	&	\\ \tabucline [0.11pt,] {-} %01
+				\end{longtabu}																	
+				\clearpage																	
+
+
+		\section{	longtabu}				
+	%	------------------------------------------------------------------------------  table longtable
+
+			\begin{table} [h]
+			\caption{내선 전화 번호}  
+			\label{tab:title} 
+			\end{table}
+
+
+			\begin{center}
+			\tabulinesep=0.4em
+
+			\begin{longtabu} to 1.0\linewidth 	{  
+									X[r, 0.2]	%01
+									X[r, 0.2]	%02
+									X[r, 0.2]	%03
+									X[r, 0.2]	%04
+									X[r, 1.0]	%05
+									}
+
+				\tabucline[0.1ex]{- }									
+					&	번호	&	이름	&	직책	&	비고	\\
+				\tabucline[0.02ex]{- }									
+				\tabucline[0.02ex]{- }									
+				\endfirsthead									
+				\endhead	
+												
+					&	101	&	최훈	&	현장소장	&		\\
+				\tabucline[0.02ex]{- }									
+				관리	&	102	&	황성혁	&	관리팀장	&		\\
+					&	112	&	정경욱	&	자재과장	&		\\
+					&	113	&	정유진	&	원가담당	&		\\
+				\tabucline[0.02ex]{- }									
+				공무	&	103	&	채흥목	&	공무팀장	&		\\
+					&	108	&	박석환	&	공무차장	&		\\
+					&	109	&		&		&		\\
+					&	110	&	강정모	&	공무대리	&		\\
+					&	111	&	문은경	&		&		\\
+				\tabucline[0.02ex]{- }									
+				공사	&	104	&	이진철	&	공사팀장	&		\\
+					&	114	&	김만덕	&	공사과장	&		\\
+					&	115	&	오만교	&	공사과장	&		\\
+					&	116	&	김비호	&	공사대리	&		\\
+					&	124	&	공석	&		&		\\
+				\tabucline[0.02ex]{- }									
+				품질	&	106	&	최승철	&	품질팀장	&		\\
+					&	120	&	김태규	&	품질과장	&		\\
+					&	125	&	공석	&		&		\\
+				\tabucline[0.02ex]{- }									
+				안전	&	105	&	조기운	&	안전팀장	&		\\
+					&	117	&	강병훈	&	안전과장	&		\\
+					&	118	&	임수진	&	보건대리	&		\\
+					&	119	&	신영철	&	안전기사	&		\\
+				\tabucline[0.02ex]{- }									
+				측량	&	107	&	고정현	&	측량팀장	&		\\
+					&	121	&	채경두	&	측량기사	&		\\
+				\tabucline[0.02ex]{- }									
+				계근	&	122	&	계근대관리자	&		&		\\
+					&	123	&	공석(관리)	&		&		\\
+				\tabucline[0.02ex]{- }									
+				송장	&		&	배민석	&		&		\\
+					&		&	정명철	&		&		\\
+				\tabucline[0.02ex]{- }									
+				감독	&	201	&	오정태	&	감독관	&		\\
+					&		&	최락선	&	감독관	&		\\
+				\tabucline[0.02ex]{- }									
+				감리	&	202	&	이재봉	&	감리단장	&		\\
+					&	203	&	김대희	&	감리원	&		\\
+					&	204	&	진채영	&	송장관리인	&		\\
+					&	205	&	홍성하	&	송장관리인	&		\\
+				\tabucline[0.02ex]{- }									
+				본사	&	7195	&	정경진	&	감리팀장	&		\\
+					&	7251	&	이재호	&	부장	&		\\
+					&	7121	&	고성원	&	과장	&		\\
+					&	7030	&	김기수	&	대리	&		\\
+					&	7264	&	한지은	&	사원	&		\\
+				\tabucline[0.02ex]{- }									
+				\tabucline[0.02ex]{- }									
+			\end{longtabu} 
+			\end{center}
+
+		\clearpage
+
+
+
+
+
+		\section{	longtabu}				
+	%	------------------------------------------------------------------------------  table longtable
+
+
+
+
+
+			% 표 : 계약 현황
+			% ===== ===== ===== ===== ===== ===== ===== ===== table longtabele
+				\begin{table} [h]																	
+				\caption{		계약 현황 	2018년 01월 02일 요일			}										
+				\label{tab:title}																	
+				\end{table}																	
+				\tabulinesep=				0.8	em
+				\begin{longtabu} to 1.0\linewidth { 																	
+						X[	l,	1.1	]	%	1	구분
+					|	X[	l,	2	]	%	2	내용
+					|	X[	l,	0.4	]	%	4	비고									
+						}															
+			% ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 							.											
+				\tabucline [1.1pt,] {-}																	
+				구분	&	내용	&비고 \\										
+				\tabucline [0.1pt,] {-}																	
+				\tabucline [1.1pt,] {-}																	
+				\endfirsthead																	
+				\endhead																	
+			% ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 							.											
+				계약 번호				&용역-2018  0000 5									&				 \\		\tabucline [0.11pt,] {-}					%	1		
+				계약명				&부산 에코델타시티 2단계 제3공구(토공) 건설사업관리용역 (1차년도)	&				 \\		\tabucline [0.11pt,] {-}					%	2		
+				현장					&부산시 강서구 강동동 일원								&				 \\		\tabucline [0.11pt,] {-}					%	3		
+																											\tabucline [1.11pt,] {-}
+																											\tabucline [1.11pt,] {-}
+				계약금액				&금 삼억원정 (300,000,000)								&				 \\		\tabucline [0.11pt,] {-}					%	4		
+				총용역부기금액			&금 칠억일천이백오십만원정 (712,500,000)					&				 \\		\tabucline [0.11pt,] {-}					%	5		
+				인지세				&금 일십오만원정 (150,000)								&				 \\		\tabucline [0.11pt,] {-}					%	6		
+				계약보증금 			&금 일억육백팔십칠만오천원 (106,875,000)					&				 \\		\tabucline [0.11pt,] {-}					%	7		
+																											\tabucline [1.11pt,] {-}
+				용역기간 				&착공일로부터 330일간 (2018/01/10 - 2018/12/05) 				&				 \\		\tabucline [0.11pt,] {-}					%	8		
+				준공일				&2018 / 12 / 05  										&				 \\		\tabucline [0.11pt,] {-}					%	8		
+				총용역기간				&착공일로부터 761일간 (2018/01/10 - 2020/02/09)				&				 \\		\tabucline [0.11pt,] {-}					%	9		
+																											\tabucline [1.11pt,] {-}
+				준공일				&2020 / 02 / 09  										&				 \\		\tabucline [0.11pt,] {-}					%	8		
+				물가변동계약금액조정방법	&품목조정율										&				 \\		\tabucline [0.11pt,] {-}		\tabucline [0.11pt,] {-}			%	10		
+				지체상금율				&0.250 퍼세트/일 									&				 \\		\tabucline [0.11pt,] {-}		\tabucline [0.11pt,] {-}			%	10		
+				국민주택채권매입필증징구	&금 원정 (0)										&				 \\		\tabucline [0.11pt,] {-}					%	11		
+			% ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 							.											
+				\end{longtabu}																	
+				\clearpage																	
+			% ===== ===== ===== ===== ===== ===== ===== ===== table 마지막							.											
+
+
+
+
+
+		\section{	longtabu}				
+	%	------------------------------------------------------------------------------  table longtable
+
+
+			\begin{table} [h]										
+			\caption{내선 전화 번호}										
+			\label{tab:title}										
+			\end{table}										
+			\begin{center}										
+			\tabulinesep=0.4em										
+			\begin{longtabu} to 1.0\linewidth {										
+						X[		r,		0.1	]	% 01	
+						X[		r,		0.1	]	% 02	
+						X[		r,		0.2	]	% 03	
+						X[		r,		0.2	]	% 04	
+						X[		r,		1	]	% 05	
+						}							
+				% ----- ----- ----- ----- ----- ----- ----- ----- -----									
+				\tabucline[0.1ex]{- }									
+					&	번호	&	이름	&	직책	&	비고	\\
+				\tabucline[0.02ex]{- }									
+				\tabucline[0.02ex]{- }									
+				\endfirsthead									
+				\endhead									
+					&	101	&	최훈	&	현장소장	&		\\
+				\tabucline[0.02ex]{- }									
+				관리	&	102	&	황성혁	&	관리팀장	&		\\
+					&	112	&	정경욱	&	자재과장	&		\\
+					&	113	&	정유진	&	원가담당	&		\\
+				\tabucline[0.02ex]{- }									
+				공무	&	103	&	채흥목	&	공무팀장	&		\\
+					&	108	&	박석환	&	공무차장	&		\\
+					&	109	&		&		&		\\
+					&	110	&	강정모	&	공무대리	&	"작업 일보 9월 26일 가지 만 보냄
+			10월 1일 까지"	\\
+					&	111	&	문은경	&		&		\\
+				\tabucline[0.02ex]{- }									
+				공사	&	104	&	이진철	&	공사팀장	&		\\
+					&	114	&	김만덕	&	공사과장	&		\\
+					&	115	&	오만교	&	공사과장	&		\\
+					&	116	&	김비호	&	공사대리	&		\\
+					&	124	&	공석	&		&		\\
+				\tabucline[0.02ex]{- }									
+				품질	&	106	&	최승철	&	품질팀장	&		\\
+					&	120	&	김태규	&	품질과장	&		\\
+					&	125	&	공석	&		&		\\
+				\tabucline[0.02ex]{- }									
+				안전	&	105	&	조기운	&	안전팀장	&		\\
+					&	117	&	강병훈	&	안전과장	&		\\
+					&	118	&	임수진	&	보건대리	&		\\
+					&	119	&	신영철	&	안전기사	&		\\
+				\tabucline[0.02ex]{- }									
+				측량	&	107	&	고정현	&	측량팀장	&		\\
+					&	121	&	채경두	&	측량기사	&		\\
+				\tabucline[0.02ex]{- }									
+				계근	&	122	&	계근대관리자	&		&		\\
+					&	123	&	공석(관리)	&		&		\\
+				\tabucline[0.02ex]{- }									
+				송장	&		&	배민석	&		&		\\
+					&		&	정명철	&		&		\\
+				\tabucline[0.02ex]{- }									
+				감독	&	201	&	오정태	&	감독관	&		\\
+					&		&	최락선	&	감독관	&		\\
+				\tabucline[0.02ex]{- }									
+				감리	&	202	&	이재봉	&	감리단장	&	10차 추가 토취장 토취장 조사	\\
+					&	203	&	김대희	&	감리원	&		\\
+					&	204	&	진채영	&	송장관리인	&		\\
+					&	205	&	홍성하	&	송장관리인	&	오전 명륜 롯데	\\
+					&		&		&		&	오후 구포 반도	\\
+				\tabucline[0.02ex]{- }									
+				본사	&	7195	&	정경진	&	감리팀장	&		\\
+					&	7251	&	이재호	&	부장	&		\\
+					&	7121	&	고성원	&	과장	&	전형배 상무 초상	\\
+					&	7030	&	김기수	&	대리	&		\\
+					&	7264	&	한지은	&	사원	&	송장관리인 9월 명세서 메일로 보냄	\\
+					&		&	하수진	&	상무	&	내일 통화 하기로 함	\\
+					&		&	안신영	&	마누라	&	센터 사물함 변경	\\
+				\tabucline[0.02ex]{- }									
+				\tabucline[0.02ex]{- }									
+				% ----- ----- ----- ----- ----- ----- ----- ----- -----									
+			\end{longtabu}										
+			\end{center}										
+			\clearpage										
+
+
+
+
+		\section{	longtabu}				
+	%	------------------------------------------------------------------------------  table longtable
+
+
+			% 표 : 토사 반입 																		
+			% ------------------------------------------------------------------------------ table	longtable
+				\begin{table} [h]																	
+				\caption{		토사반입 : 		2018년 10월 00일 요일			}										
+				\label{tab:title}																	
+				\end{table}																	
+				\tabulinesep=				1.0	em
+%				\tabulinesep=				0.0	em
+				\begin{longtabu} to 1.0\linewidth { 																	
+						X[	l,	1	]	%	1	차량대수									
+					|	X[	l,	1	]	%	2	현장명									
+					|	X[	l,	1	]	%	3	첫차									
+					|	X[	l,	1	]	%	4	비고									
+						}															
+			% ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 							.											
+				\tabucline [1pt,] {-}																	
+				차량대수	&	현장명	&	첫차	&	시작 일련번호	 \\										
+				\tabucline [0.1pt,] {-}																	
+				\tabucline [0.1pt,] {-}																	
+				\endfirsthead																	
+				\endhead																	
+			% ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 							.											
+					&			&		&			\\	\tabucline [0.11pt,] {-} %01
+					&			&		&			\\	\tabucline [0.11pt,] {-} %02
+					&			&		&			\\	\tabucline [0.11pt,] {-} %03
+					&			&		&			\\	\tabucline [0.11pt,] {-} %04
+					&			&		&			\\	\tabucline [0.11pt,] {-} %05
+					&			&		&			\\	\tabucline [0.11pt,] {-} %06
+					&			&		&			\\	\tabucline [0.11pt,] {-} %07
+					&			&		&			\\	\tabucline [0.11pt,] {-} %08
+					&			&		&			\\	\tabucline [0.11pt,] {-} %09
+					&			&		&			\\	\tabucline [0.11pt,] {-} %10
+					&			&		&			\\	\tabucline [0.11pt,] {-} %11
+					&			&		&			\\	\tabucline [0.11pt,] {-} %12
+					&			&		&			\\	\tabucline [0.11pt,] {-} %13
+					&			&		&			\\	\tabucline [0.11pt,] {-} %14
+					&			&		&			\\	\tabucline [0.11pt,] {-} %15
+			% ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 							.											
+				\end{longtabu}																	
+				\clearpage																	
+
+
+
+
+		\section{	longtabu}				
+	%	------------------------------------------------------------------------------  table longtable
+
+							.											
+			% ------------------------------------------------------------------------------ table	longtable
+				\begin{table} [h]																	
+				\caption{		토사반입상태 : 		2018년 10월 00일 요일			}										
+				\label{tab:title}																	
+				\end{table}																	
+				\begin{center}																	
+				\tabulinesep=				1.2	em
+%				\tabulinesep=				0.0	em
+				\begin{longtabu} to 1.0\linewidth { 																	
+						X[	r,	0.5	]	%	1	차량대수									
+				|		X[	l,	1	]	%	2	현장명									
+				|		X[	l,	1	]	%	3	도장									
+				|		X[	l,	1	]	%	4	색									
+				|		X[	l,	1	]	%	5	함수상태									
+				|		X[	r,	2	]	%	6	비고									
+						}															
+				\tabucline [1pt,] {-}																	
+				번호		&	현장명	&	도장 모양	&	색	&	함수상태	&	비고	 \\				
+				\tabucline [0.1pt,] {-}																	
+				\tabucline [0.1pt,] {-}																	
+				\endfirsthead																	
+				\endhead																	
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	1
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	2
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	3
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	4
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	5
+					\tabucline [0.11pt,] {-}	%	
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	1
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	2
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	3
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	4
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	5
+					\tabucline [0.11pt,] {-}	%	
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	1
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	2
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	3
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	4
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	5
+					\tabucline [0.11pt,] {-}	%	
+				\tabucline [0.11pt,] {-}																	
+				\end{longtabu}																	
+				\end{center}																	
+				\clearpage																	
+			% ===== ===== ===== ===== ===== ===== ===== ===== table 마지막							.											
+																					
+																					
+			% ===== ===== ===== ===== ===== ===== ===== ===== 그림 시작	-  송장 관리실 토사 반입 정리 문자  첨부
+				\begin{figure}[h]																	
+				\caption{		토사반입상태 : 		2018년 10월 23일 화요일			}										
+				\label{tab:figure}																	
+				\centering																	
+%				\includegraphics[width=0.6\textwidth]{./fig/in-count-20181023_170045774.jpg}																	
+				\end{figure}																	
+				\clearpage																	
+			% ===== ===== ===== ===== ===== ===== ===== ===== 그림 마지막																		
+
+				\clearpage
+%				\includepdf[pages=-, fitpaper=true] {./execel/2222.pdf}
+
+
+
+		\section{	longtabu}				
+	%	------------------------------------------------------------------------------  table longtable
+				\begin{table} [h]																	
+				\caption{		토사반입상태 : 		2018년 10월 00일 요일			}										
+				\label{tab:title}																	
+				\end{table}																	
+				\begin{center}																	
+				\tabulinesep=				1.2	em
+%				\tabulinesep=				0.0	em
+				\begin{longtabu} to 1.0\linewidth { 																	
+						X[	r,	0.5	]	%	1	차량대수									
+				|		X[	l,	1	]	%	2	현장명									
+				|		X[	l,	1	]	%	3	도장									
+				|		X[	l,	1	]	%	4	색									
+				|		X[	l,	1	]	%	5	함수상태									
+				|		X[	r,	2	]	%	6	비고									
+						}															
+		\hline \hline
+		번호		&	현장명	&	도장 모양	&	색	&	함수상태	&	비고	 \\				
+		\hline \hline
+	\endfirsthead
+		\multicolumn{3}{c}%
+		{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+		\hline
+		번호		&	현장명	&	도장 모양	&	색	&	함수상태	&	비고	 \\				
+		\hline 		\hline
+	\endhead
+		\hline \multicolumn{3}{r}{\textit{Continued on next page}} \\
+	\endfoot
+		\hline
+	\endlastfoot
+
+							
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	1
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	2
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	3
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	4
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	5
+					\tabucline [0.11pt,] {-}	%	
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	1
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	2
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	3
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	4
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	5
+					\tabucline [0.11pt,] {-}	%	
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	1
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	2
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	3
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	4
+					&				&		&			&			&		 			\\		\tabucline [0.01pt,] {-}			%	5
+					\tabucline [0.11pt,] {-}	%	
+				\tabucline [0.11pt,] {-}																	
+				\end{longtabu}																	
+				\end{center}																	
+				\clearpage																	
+			% ===== ===== ===== ===== ===== ===== ===== ===== table 마지막							.											
+																					
+																					
+			% ===== ===== ===== ===== ===== ===== ===== ===== 그림 시작	-  송장 관리실 토사 반입 정리 문자  첨부
+				\begin{figure}[h]																	
+				\caption{		토사반입상태 : 		2018년 10월 23일 화요일			}										
+				\label{tab:figure}																	
+				\centering																	
+%				\includegraphics[width=0.6\textwidth]{./fig/in-count-20181023_170045774.jpg}																	
+				\end{figure}																	
+				\clearpage																	
+			% ===== ===== ===== ===== ===== ===== ===== ===== 그림 마지막																		
+
+				\clearpage
+%				\includepdf[pages=-, fitpaper=true] {./execel/2222.pdf}
+
+
+
+
+%	=========================================================================================================================================================== Part			longtable
+%	\addtocontents{toc}{\protect\newpage}
+	\part{longtabu}
+	\noptcrule
+	\parttoc				
+
+
+
+		\section{	longtabu}				
+
+
+		\section{	longtable}				
+	%	------------------------------------------------------------------------------  table longtable
+
+
+\begin{center}
+\begin{longtable}{| l | l | l |  l |}
+	\caption{금정불교대학 수업일정}\\
+		\hline
+		\textbf{번호} & \textbf{일자} & \textbf{과목}  & \textbf{강사}  \\
+		\hline
+	\endfirsthead
+		\multicolumn{3}{c}%
+		{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+		\hline
+		\textbf{번호} & \textbf{일자} & \textbf{과목}  & \textbf{강사}  \\
+		\hline
+	\endhead
+		\hline \multicolumn{3}{r}{\textit{Continued on next page}} \\
+	\endfoot
+		\hline
+	\endlastfoot
+
+
+001	&		3월	3	일	&	입학식	&	범어사 보제루	\\
+		\hline
+		\hline
+002	&		3월	4	월	&	O.T 및 사찰예절	&	교무실. 포교국장	\\
+003	&		3월	5	화	&	사찰예절	&	포교국장	\\
+004	&		3월	11	월	&	서로인사나눔	&	포교국장	\\
+005	&		3월	12	화	&	예불문의 이해 및 실재	&	포교국장	\\
+006	&		3월	18	월	&	기도 및 예불의 실재	&	포교국장	\\
+007	&		3월	19	화	&	찬불가 1 (의식곡)	&	김화정교수	\\
+008	&		3월	25	월	&	부처님의 생애 1	&	포교국장	\\
+009	&		3월	26	화	&	부처님의 생애 2	&	포교국장	\\
+		\hline
+		\hline
+010	&		4월	1	월	&	부처님의 생애 3	&	포교국장	\\
+011	&		4월	2	화	&	부처님의 생애 4	&	포교국장	\\
+012	&		4월	8	월	&	천수경 1	&	능서스님/교육국장	\\
+013	&		4월	9	화	&	천수경 2	&	능서스님/교육국장	\\
+014	&		4월	15	월	&	다도 1	&	백영선 마하다도회	\\
+015	&		4월	16	화	&	오계와 보살계	&	율감스님	\\
+		\hline
+		\hline
+016	&		4월	21	일	&	11시 주지스님법문 범어사순례	&		\\
+		\hline
+		\hline
+017	&		4월	22	월	&	천수경 3	&	능서스님/교육국장	\\
+018	&		4월	23	화	&	천수경 4	&	능서스님/교육국장	\\
+019	&		4월	29	월	&	천수경 5	&	능서스님/교육국장	\\
+020	&		4월	30	화	&	천수경 6	&	능서스님/교육국장	\\
+		\hline
+		\hline
+021	&		5월	6	월	&	불교대학 삼사순례	&		\\
+022	&		5월	7	화	&	부처님의 생애 5	&	포교국장	\\
+		\hline
+		\hline
+023	&		5월	12	일	&	부처님 오신날 - 범어사 봉사	&		\\
+		\hline
+		\hline
+024	&		5월	13	월	&	부처님의 생애 6	&	포교국장	\\
+025	&		5월	14	화	&	부처님의 생애 7	&	포교국장	\\
+026	&		5월	20	월	&	부처님의 생애 8	&	포교국장	\\
+027	&		5월	21	화	&	찬불가 2	&	김화정교수	\\
+028	&		5월	27	월	&	기도란? 기도의 실재	&	포교국장	\\
+029	&		5월	28	화	&	수행의 실재	&	포교국장	\\
+		\hline
+		\hline
+030	&		6월	3	월	&	초기불교1. 사성제	&	포교국장	\\
+031	&		6월	4	화	&	초기불교2. 팔정도	&	포교국장	\\
+032	&		6월	10	월	&	초기불교3. 오온 12처	&	포교국장	\\
+033	&		6월	11	화	&	초기불교4. 중도	&	포교국장	\\
+034	&		6월	17	월	&	자비명상	&	자목스님/포교국장	\\
+035	&		6월	18	화	&	초기불교5. 연기법	&	포교국장	\\
+		\hline
+		\hline
+036	&		6월	22	토	&	템플스테이. 야간반(1박2일) 부주지스님 법문	&		\\
+		\hline
+		\hline
+037	&		6월	24	월	&	찬불가3	&	추현철교수	\\
+038	&		6월	25	화	&	초기불교 6. 12연기	&	포교국장	\\
+		\hline
+		\hline
+039	&		7월	1	월	&	초기불교 7, 연기법 수행	&	포교국장	\\
+040	&		7월	2	화	&	특강	&	정홍섭 동명대총장	\\
+041	&		7월	8	월	&	부파불교 1	&	포교국장	\\
+042	&		7월	9	화	&	부파불교 2	&	포교국장	\\
+043	&		7월	15	월	&	찬불가 4	&	추현철교수	\\
+044	&		7월	16	화	&	부파불교 3	&	포교국장	\\
+045	&		7월	22	월	&	중관불교 1	&	권서용교수	\\
+046	&		7월	23	화	&	중관불교 2	&	권서용교수	\\
+047	&		7월	29	월	&	중관불교 3	&	권서용교수	\\
+048	&		7월	30	화	&	특강	&	사회국장	\\
+		\hline
+		\hline
+049	&		8월	19	월	&	유식불교1	&	김경일교수	\\
+050	&		8월	20	화	&	유식불교2	&	김경일교수	\\
+051	&		8월	26	월	&	유식불교3	&	김경일교수	\\
+052	&		8월	27	화	&	다도2	&	백영선 마하다도회	\\
+		\hline
+		\hline
+053	&		9월	2	월	&	비교종교 1	&	미정	\\
+054	&		9월	3	화	&	비교종교 2	&	미정	\\
+055	&		9월	9	월	&	대승불교 1	&	포교국장	\\
+056	&		9월	10	화	&	불교와 문화 1	&	이정은 박물관실장	\\
+057	&		9월	16	월	&	특강	&	연수국장	\\
+058	&		9월	17	화	&	불교와 문화 2	&	이정은 박물관실장	\\
+059	&		9월	19	목	&	야간반 무료급식 봉사	&		\\
+		\hline
+		\hline
+060	&		9월	22	일	&	범어불교대학동문 체육대회	&		\\
+		\hline
+		\hline
+061	&		9월	23	월	&	대승불교 2	&	포교국장	\\
+062	&		9월	24	화	&	불교와 문화 3	&	이정은 박물관실장	\\
+063	&		9월	30	월	&	불교와 사회복지	&	범어법인 김영 국장	\\
+		\hline
+064	&		10월	1	화	&	경주와 불교문화	&	포교국장	\\
+		\hline
+		\hline
+065	&		10월	3	목	&	야간반 경주답사	&		\\
+		\hline
+		\hline
+066	&		10월	7	월	&	선불교 1	&	교무국장	\\
+067	&		10월	8	화	&	선불교 2	&	교무국장	\\
+068	&		10월	14	월	&	인도중국 불교사	&	능서스님/이석언법사	\\
+069	&		10월	15	화	&	인도중국 불교사	&	능서스님/이석언법사	\\
+		\hline
+		\hline
+070	&		10월	19	토	&	종단필수연수교육(주야) 설법전	&		\\
+		\hline
+		\hline
+071	&		10월	21	월	&	특강	&	총무국장	\\
+072	&		10월	22	화	&	반야심경 1	&	강주 정한 스님	\\
+073	&		10월	28	월	&	반야심경 2	&	강주 정한 스님	\\
+074	&		10월	29	화	&	찬불가 5	&	김화정교수	\\
+		\hline
+		\hline
+075	&		11월	4	월	&	한국불교사 1	&	미정	\\
+076	&		11월	5	화	&	한국불교사 2	&	미정	\\
+077	&		11월	11	월	&	총정리 1	&	포교국장	\\
+078	&		11월	12	화	&	총정리 2	&	포교국장	\\
+079	&		11월	18	월	&	다도 명상	&	방수정 교수	\\
+080	&		11월	19	화	&	총정리 3	&	포교국장	\\
+081	&		11월	25	월	&	서로나눔	&	포교국장	\\
+082	&		11월	26	화	&	총정리 4	&	포교국장	\\
+		\hline
+		\hline
+083	&		12월	2	월	&	총정리 5	&	포교국장	\\
+084	&		12월	3	화	&	총정리 6	&	포교국장	\\
+085	&		12월	9	월	&	총정리 7	&	포교국장	\\
+086	&		12월	10	화	&	시험	&	포교국장	\\
+		\hline
+		\hline
+087	&		12월	15	일	&	졸업식	&	범어사 보제루	\\
+
+
+\end{longtable}
+\end{center}
+
+
+
+
+% ------------------------------------------------------------------------------
+% End document
+% ------------------------------------------------------------------------------
+\end{document}
+
+
+
+
+
+
+
+
+
